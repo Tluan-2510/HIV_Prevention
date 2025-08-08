@@ -1,5 +1,3 @@
-flask
-flask-cors
-gunicorn
-pydantic
-python-dotenv
+Flask==2.3.2
+requests==2.31.0
+PyJWT==2.8.0
