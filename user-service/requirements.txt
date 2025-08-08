@@ -1,5 +1,5 @@
-flask
-flask-cors
-gunicorn
-pydantic
-python-dotenv
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.5
+psycopg2-binary==2.9.6
+bcrypt==4.0.1
+PyJWT==2.8.0
