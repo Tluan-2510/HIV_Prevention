@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  user-service:
+    build: ./user-service
+    container_name: user-service
+    ports:
+      - "5001:5000"
+    restart: always
+
+  notification-service:
+    build: ./notification-service
+    container_name: notification-service
+    ports:
+      - "5002:5000"
+    restart: always
+
+  article-service:
+    build: ./article-service
+    container_name: article-service
+    ports:
+      - "5003:5000"
+    restart: always
+
+  risk-service:
+    build: ./risk-service
+    container_name: risk-service
+    ports:
+      - "5004:5000"
+    restart: always
+
+  event-service:
+    build: ./event-service
+    container_name: event-service
+    ports:
+      - "5005:5000"
+    restart: always
+
+  consultation-service:
+    build: ./consultation-service
+    container_name: consultation-service
+    ports:
+      - "5006:5000"
+    restart: always
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8000:5000"
+    restart: always
